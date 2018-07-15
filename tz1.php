@@ -39,9 +39,9 @@ $words = ['red', 'green', 'yellow', 'blue', 'orange'];
 
 $t = microtime(true);
 $strings = render_strings($words, 10000000);
-echo "T = ".(microtime(true) - $t)."\n";
+echo "T = ".(microtime(true) - $t)."<br>";
 
 $t = microtime(true);
 $uniques = get_uniques($strings, count($words));
-echo "T = ".(microtime(true) - $t)."\n";
+echo "T = ".(microtime(true) - $t)."<br>";
 print_r($uniques);
